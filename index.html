@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEMPORAL – Obra de Natalia Scuzarello</title>
+<link rel="stylesheet" href="styles.css">
+
+<!--Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<header>
+    <h1>TEMPORAL</h1>
+</header>
+
+<main>
+    <!-- Descripción general -->
+    <section class="intro">
+        <h3>Instalación generativa en tiempo real</h3>
+        <p>La obra parte de la idea de hacer visible lo invisible al traducir descargas electromagnéticas en representaciones sonoras y visuales. Retoma la noción del cielo como un espacio históricamente asociado a la contemplación y al conocimiento astronómico, pero que en la actualidad se vincula también con sistemas de vigilancia, control y manipulación tecnológica. En este cruce, la instalación propone un marco para pensar cómo los datos atmosféricos median la relación entre lo humano y su entorno.
+        </p>
+    </section>
+
+    <!-- Qué es -->
+    <section class="que-es">
+        <h3>Qué es</h3>
+        <p>
+            Obra audiovisual que utiliza datos de descargas electromagnéticas atmosféricas (rayos) en tiempo real, 
+            recopilados por la red colaborativa <strong>Blitzortung</strong>, para transformarlos en imagen y sonido.
+        </p>
+    </section>
+
+    <!-- Procesamiento -->
+    <section class="procesamiento">
+        <h3>Procesamiento</h3>
+        <p>
+            La obra se alimenta de datos en tiempo real provenientes de la red colaborativa <strong>Blitzortung</strong>, que registra descargas electromagnéticas atmosféricas con precisión de tiempo y localización. Esa información es utilizada en <strong>Pure Data</strong> como trigger para un secuenciador sonoro que organiza los eventos en patrones rítmicos. Posteriormente, en <strong>Processing</strong> se analiza el audio mediante la librería Minim y una transformada de Fourier (FFT), lo que permite extraer amplitudes y frecuencias para generar estructuras visuales en movimiento. Finalmente, la arquitectura se integra en <strong>TouchDesigner</strong>, donde los datos procesados activan capas visuales y parámetros interactivos, consolidando un entorno inmersivo en el que sonido, imagen y datos se articulan en tiempo real.
+        </p>
+    </section>
+
+    <!-- Arquitectura técnica -->
+    <section class="arquitectura">
+    <h3>Arquitectura técnica</h3>
+
+    <div class="bloques-tecnicos">
+
+        <!-- Blitzortung -->
+        <div class="bloque">
+            <video src="blitzortung.mp4" width="200" height="200" autoplay muted loop></video>
+            <h4>Blitzortung</h4>
+            <p>Red colaborativa de detección de rayos que provee datos en tiempo real de descargas electromagnéticas (coordenadas, intensidad y tiempo).</p>
+        </div>
+
+        <!-- Pure Data -->
+        <div class="bloque">
+            <video src="puredatasequencer.mp4" width="200" height="200" autoplay muted loop></video>
+            <h4>Pure Data</h4>
+            <p>Los datos de Blitzortung ingresan como triggers en un secuenciador sonoro que genera patrones rítmicos y capas de sonido generativo.</p>
+        </div>
+
+        <!-- Processing -->
+        <div class="bloque">
+            <video src="processing_fft.mp4" width="200" height="200" autoplay muted loop></video>
+            <h4>Processing</h4>
+            <p>El audio se analiza con la librería Minim y FFT para extraer amplitudes y frecuencias, transformándolas en visualizaciones tridimensionales dinámicas.</p>
+        </div>
+
+        <!-- TouchDesigner -->
+        <div class="bloque">
+            <video src="touchdesigner_final.mp4" width="200" height="200" autoplay muted loop></video>
+            <h4>TouchDesigner</h4>
+            <p>Integra los datos y las visualizaciones finales, generando la composición audiovisual en tiempo real y el entorno inmersivo de la instalación.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Agradecimientos -->
+<section class="agradecimientos">
+    <h3>Agradecimientos</h3>
+    <ul>
+        <li><strong>NE:RD – Nuevas Expresiones Rosario Digital</strong></li>
+        <li><strong>CEC – Centro de Expresiones Contemporáneas</strong> y su <strong>Equipo de Producción</strong></li>
+        <li><strong>Municipalidad de Rosario</strong></li>
+    </ul>
+    <p>Por el apoyo y la colaboración en la exhibición de esta obra.</p>
+</section>
+
+<!-- Contacto -->
+<section class="contacto">
+    <h3>Contacto y prensa</h3>
+    <p>
+        <i class="fa-solid fa-user"></i> Natalia Scuzarello
+    </p>
+    <p>
+        <i class="fa-solid fa-globe"></i> 
+        <a href="https://www.natscuzarello.com" target="_blank">natscuzarello.com</a>
+    </p>
+    <p>
+        <i class="fa-solid fa-envelope"></i> 
+        <a href="mailto:natscuzarello@gmail.com">natscuzarello@gmail.com</a>
+    </p>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Natalia Scuzarello</p>
+</footer>
+</body>
+</html>
